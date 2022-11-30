@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Form Part One">
+  <meta name="keywords" content="HTML">
+  <meta name="author" content="Galhoum">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form method="POST" action="test.py">
+    <input type="hidden" value="1">
+    <div>
+      <label for="user">Username:</label><br>
+      <input type="text" name="user" id="user" placeholder="write your username" required>
+    </div><hr>
+    <div>
+      <label for="pass">Password:</label><br>
+      <input type="password" name="pass" id="pass" placeholder="write your password">
+    </div><hr>
+    <div>
+      <label for="phone">Mobile:</label><br>
+      <input type="tel" name="phone" id="phone" placeholder="+20100 123 (234)">
+    </div><hr>
+    <div>
+      <label for="email">Email:</label><br>
+      <input type="email" name="email" id="email" resize="none" placeholder="o@sss.na" required>
+    </div><hr>
+    <div>
+      <label for="subject">Subject</label><br>
+      <input type="text" name="subject" id="subject" placeholder="your subject">
+    </div><hr>
+    <div>
+      <label for="range">Range</label><br>
+      <input type="range" name="range" id="range" min="100" max="500" step="50" value="400">
+    </div><br>
+    <div>
+      <input type="reset" value="Empty Form">
+      <input type="submit" value="Send Data">
+    </div>
+  </form>
+</body>
+</html>
